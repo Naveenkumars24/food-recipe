@@ -2,13 +2,20 @@
   "name": "back-end",
   "version": "1.0.0",
   "description": "food-recipe-app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js",
+    "start": "nodemon server.js"
   },
   "author": "naveen",
   "license": "ISC",
   "dependencies": {
-    "back-end": "file:"
+    "back-end": "file:",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
